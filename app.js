@@ -18,6 +18,6 @@ imageOnClick.addEventListener('click', function(e) {
     container.appendChild(imageOnClick);
 });
 
-imageOnClick.addEventListener('mousemove',function(){
-    
+imageOnClick.addEventListener('mouseenter',function(e){
+  this.style.backgroundSize = "250%";
 })
