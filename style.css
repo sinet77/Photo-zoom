@@ -1,5 +1,4 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -7,22 +6,28 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+  }
 
  img.zoomed {
     transform: scale(1.7);
   }
 
-.newBox{
-    width: 50%;
-    height: 50%;
-    border: 1px solid black;
-    background-color: hsl(0, 0%, 94%);
+  .newBox {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;  /*przycisk X bedzie pozycjonowany względem newBox */
-}
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 
 .newBox .close {
     position: absolute; 
